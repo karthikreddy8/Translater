@@ -1,9 +1,8 @@
 var btnTranslate =document.querySelector("#btn-translate")
 var textArea =document.querySelector("#text-area");
-console.log(textArea)
+var outputDiv =  document.querySelector("#output")
 
 function clickEventhandler(){
-    console.log ("clicked")
-    console.log ("input", textArea.value);
+ outputDiv.innerText="karthik "+ textArea.value;
 };
 btnTranslate.addEventListener("click" ,clickEventhandler )

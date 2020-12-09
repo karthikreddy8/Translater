@@ -1,8 +1,22 @@
 var btnTranslate =document.querySelector("#btn-translate")
-var textArea =document.querySelector("#text-area");
-var outputDiv =  document.querySelector("#output")
+var txtInput = document .querySelector("#txt-input")
+var outputDiv = document.querySelector("#output")
+var serverURL ="https://api.funtranslations.com/translate/minion.json"
+// var serverURL = "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json"
+function getTranslationURL(input){
+    return serverURL +"?" +"text="+ input
+}
+ function clickHandler() {
+     var inputText = txtInput.Value;
 
-function clickEventhandler(){
- outputDiv.innerText="karthik "+ textArea.value;
-};
-btnTranslate.addEventListener("click" ,clickEventhandler )
+     fetch(getTranslationURL(inputText))
+     .then(Response => Response.json())
+     .then(json => {
+         var translatedText = json .contents.translated;
+         outputDiv.innerText =translatedText;
+
+     })
+
+ };
+ 
+ btnTranslate.addEventListener("click",clickHandler)

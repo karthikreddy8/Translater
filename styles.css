@@ -1,0 +1,53 @@
+textarea {
+    width: 90%;
+    height: 12vh;
+    display: block;
+    margin: auto;
+    background:white;
+    text-align: center;
+
+
+    padding: 1rem;
+
+}
+body{
+    max-width: 600px;
+    padding: 2rem;
+   background-color:rgb(252, 252, 93);
+   
+}
+#output{
+    width: 90%;
+    height: 12vh;
+    margin: auto;
+    padding: 1rem;
+    background: white;
+    border: 1px solid black;
+}
+button{
+    padding: 0.6rem 1rem;
+    background-color: orange;
+    margin-right:6rem;
+    text-align: center;
+    max-width: 360px;
+    margin: auto;
+}
+h1{
+    text-align: center;
+
+}
+section{
+    text-align: center;
+    margin: auto;
+    padding: 1rem 1rem 1rem 3rem;
+  
+    
+}
+.link{
+    text-decoration: none;
+
+}
+.list-non-bullets{
+    list-style: none;
+   
+}

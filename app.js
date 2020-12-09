@@ -7,7 +7,7 @@ function getTranslationURL(input){
     return serverURL +"?" +"text="+ input
 }
  function clickHandler() {
-     var inputText = txtInput.Value;
+     var inputText = txtInput.value;
 
      fetch(getTranslationURL(inputText))
      .then(Response => Response.json())

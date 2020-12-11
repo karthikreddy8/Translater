@@ -14,7 +14,7 @@ body{
     max-width: 600px;
     padding: 2rem;
    background-color:rgb(252, 252, 93);
-   background-image: url('img_minion.jpg');
+  
    
 }
 #output{
@@ -52,3 +52,4 @@ section{
     list-style: none;
    
 }
+
